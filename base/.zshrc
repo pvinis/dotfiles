@@ -1,3 +1,5 @@
+source $HOME/.zshrc_private
+
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
@@ -16,8 +18,3 @@ source /usr/local/share/chruby/auto.sh
 
 # aliases
 alias o='open'
-
-
-
-
-
