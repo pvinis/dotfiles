@@ -1,0 +1,17 @@
+# This is Git's per-user configuration file.
+[user]
+	name = Pavlos Vinieratos
+	email = pvinis@gmail.com
+
+[core]
+	editor = /usr/bin/vim
+	excludesfile = /Users/pvinis/.gitignore
+
+[alias]
+	boc = reset HEAD~
+	pullu = pull upstream
+	wipsave = !git add -A && git commit -m "wip" && git push
+	wipload = !git pull && git boc && git push -f
+
+[credential]
+	helper = osxkeychain
