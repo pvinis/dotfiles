@@ -1,0 +1,34 @@
+# brew
+brew "git"
+brew "thefuck"
+brew "trash"
+brew "stow"
+brew "zsh"
+brew "yarn", args: ["without-node"]
+brew "pvinis/pvinis/colortools"
+
+# cask
+cask "franz"
+cask "visual-studio-code"
+cask "webtorrent"
+cask "teamviewer"
+cask "save-hollywood"
+cask "postman"
+cask "react-native-debugger"
+cask "the-unarchiver"
+cask "caffeine"
+cask "arq"
+cask "skype"
+cask "spotify"
+cask "steam"
+cask "vlc"
+cask "tunnelblick"
+cask "caskroom/versions/dropbox-beta"
+cask "caskroom/versions/firefox-beta"
+cask "caskroom/versions/google-chrome-beta"
+cask "caskroom/versions/1password-beta"
+cask "caskroom/versions/airmail-beta"
+cask "caskroom/versions/iterm2-nightly"
+
+# mas
+#mas ""
