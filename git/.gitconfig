@@ -1,11 +1,15 @@
-# This is Git's per-user configuration file.
-[user]
-	name = Pavlos Vinieratos
-	email = pvinis@gmail.com
+[inlcude]
+	path = ~/.gitconfig.private
 
 [core]
 	editor = /usr/bin/vim
 	excludesfile = /Users/pvinis/.gitignore
+
+[merge]
+	ff = false
+
+[diff]
+	colorMoved = zebra
 
 [alias]
 	boc = reset HEAD~
