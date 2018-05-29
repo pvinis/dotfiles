@@ -42,7 +42,6 @@ source /usr/local/share/chruby/chruby.sh
 source /usr/local/share/chruby/auto.sh
 
 # aliases
-alias o='open'
 
 
 
@@ -51,7 +50,7 @@ autoload -U compinit
 compinit
 
 # no args: git status
-# with args: git ..
+# with args: git `args`
 g() {
 	if [[ $# -gt 0 ]]; then
 		git "$@"
@@ -61,6 +60,16 @@ g() {
 }
 compdef g=git
 
+# no args: open .
+# with args: open `args`
+o() {
+	if [[ $# -gt 0 ]]; then
+		open "$@"
+	else
+		open .
+	fi
+}
+compdef g=git
 
 # modify the prompt to contain git branch name if applicable
 git_prompt_info() {

@@ -8,6 +8,9 @@
 [merge]
 	ff = false
 
+[pull]
+	ff = true
+
 [diff]
 	colorMoved = zebra
 
