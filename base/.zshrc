@@ -25,6 +25,7 @@ load_nvm () {
     export NVM_DIR=~/.nvm
     [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" # This loads nvm
 }
+load_nvm # load this for now. there is a problem without it. when vscode strats, or if i go to a react proj and run ./node_modules/.bin/flow, it starts with /usr/bin/env node, and that doesnt load nvm
 
 for cmd in "${NODE_GLOBALS[@]}"; do
     eval "${cmd}(){ unset -f ${NODE_GLOBALS}; load_nvm; ${cmd} \$@ }"
