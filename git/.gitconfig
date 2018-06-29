@@ -1,5 +1,5 @@
-[inlcude]
-	path = ~/.gitconfig.private
+[include]
+	path = .gitconfig.private
 
 [core]
 	editor = /usr/bin/vim
