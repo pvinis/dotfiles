@@ -3,6 +3,7 @@ brew "git"
 brew "thefuck"
 brew "trash"
 brew "stow"
+brew "fzf"
 brew "zsh"
 brew "yarn", args: ["without-node"]
 brew "pvinis/pvinis/colortools"
