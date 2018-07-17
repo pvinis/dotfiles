@@ -2,6 +2,7 @@
 brew "git"
 brew "thefuck"
 brew "trash"
+brew "ag"
 brew "stow"
 brew "fzf"
 brew "zsh"
