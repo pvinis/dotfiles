@@ -7,7 +7,7 @@ Plug 'sheerun/vim-polyglot' " syntax etc
 Plug 'w0rp/ale' " linting and fixing
 
 "" project find and fuzzy file open
-Plug '/usr/local/opt/fzf'
+Plug '/usr/local/opt/fzf' " get fzf from brew
 Plug 'junegunn/fzf.vim'
 
 Plug 'tpope/vim-commentary' " easy comment in/out
@@ -26,6 +26,9 @@ Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' } " in shougo we tru
 
 "" try
 """ Plug 'vimwiki/vimwiki'
+"Plug 'sgur/vim-editorconfig'
+"Plug 'chrisbra/Colorizer'
+
 
 call plug#end()
 
@@ -73,3 +76,23 @@ let g:deoplete#enable_at_startup = 1
 let g:deoplete#auto_complete_start_length = 1
 inoremap <expr><tab> pumvisible() ? "\<c-n>" : "\<tab>"
 inoremap <expr><s-tab> pumvisible() ? "\<c-p>" : "\<s-tab>"
+
+" javascript
+let g:javascript_plugin_flow = 1
+let g:javascript_conceal_null                 = "ø"
+let g:javascript_conceal_this                 = "@"
+" let g:javascript_conceal_return               = "⇚"
+let g:javascript_conceal_undefined            = "¿"
+let g:javascript_conceal_NaN                  = "ℕ"
+let g:javascript_conceal_prototype            = "¶"
+let g:javascript_conceal_static               = "•"
+let g:javascript_conceal_super                = "Ω"
+let g:javascript_conceal_noarg_arrow_function = "⬢"
+let g:javascript_conceal_underscore_arrow_function = "⬠"
+
+set conceallevel=1
+
+ 
+" mouse
+set mouse=nicr
+
