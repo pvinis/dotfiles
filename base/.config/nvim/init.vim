@@ -96,3 +96,10 @@ set conceallevel=1
 " mouse
 set mouse=nicr
 
+" autoreload changed files
+set autoread
+" au FocusGained,BufEnter * :checktime
+au FocusGained,BufEnter * :silent! !
+" autosave on buf switch
+au FocusLost,WinLeave * :silent! w
+
