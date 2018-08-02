@@ -44,6 +44,7 @@ source /usr/local/share/chruby/auto.sh
 # aliases
 
 
+alias f='fork'
 
 # completion
 autoload -U compinit
