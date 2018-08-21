@@ -24,6 +24,8 @@ Plug 'airblade/vim-gitgutter'
 
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' } " in shougo we trust
 
+Plug 'wesQ3/vim-windowswap'
+
 "" try
 """ Plug 'vimwiki/vimwiki'
 "Plug 'sgur/vim-editorconfig'
@@ -35,6 +37,10 @@ call plug#end()
 
 let base16colorspace = 256
 colorscheme base16-eighties
+
+
+" basic
+let mapleader="\<spc>"
 
 
 
@@ -57,6 +63,7 @@ let g:ale_fix_on_save = 1
 
 " fzf
 nnoremap <c-p> :GFiles<cr>
+"nnoremap <s-c-p> :Buffers<cr>
 nnoremap <d-s-f> :Ag<space>
 
 
