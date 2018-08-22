@@ -1,3 +1,11 @@
+# pavlos dotfiles
+
+## setup a new computer
+- install brew
+https://brew.sh/index
+
+
+
 `git clone git@github.com:pvinis/dotfiles.git`
 
 
