@@ -26,13 +26,13 @@ stow base macos git private
 ```
 
 
-
+setup zsh
+nvm setup
 brew bundleeeee and separate the brewfile file to work, home etc
-brew
 
-ruby-install
-nvm
-zsh
+
+
+ruby-install?
 
 
 
