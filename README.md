@@ -16,7 +16,7 @@ https://github.com/settings/keys
 https://gitlab.com/profile/keys  
 - clone this repo  
 ```
-git clone https://github.com/pvinis/dotfiles.git .d
+git clone --recursive git@github.com:pvinis/dotfiles.git .d
 ```
 - link all the dotfiles
 ```
