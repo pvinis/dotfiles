@@ -35,7 +35,7 @@ brew bundleeeee and separate the brewfile file to work, home etc
 ruby-install?
 
 
-
+scroll natural
 
 ## old way
 ```
