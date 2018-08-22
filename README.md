@@ -7,6 +7,13 @@ https://brew.sh/index
 ```
 brew install git stow
 ```
+- add ssh keys to github and gitlab  
+```
+ssh-keygen -t rsa -b 4096 -C "email@example.com"
+pbcopy < ~/.ssh/id_rsa.pub
+```
+https://github.com/settings/keys  
+https://gitlab.com/profile/keys  
 - clone this repo  
 ```
 git clone https://github.com/pvinis/dotfiles.git .d
