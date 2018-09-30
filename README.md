@@ -7,6 +7,7 @@ https://brew.sh/index
 ```
 brew install git stow
 ```
+name the computerrrrrrrrrr
 - add ssh keys to github and gitlab  
 ```
 ssh-keygen -t rsa -b 4096 -C "email@example.com"
@@ -25,16 +26,16 @@ stow base macos git private
 ```
 
 
-
-
-brew
-
-ruby-install
-nvm
-zsh
+setup zsh
+nvm setup
+brew bundleeeee and separate the brewfile file to work, home etc
 
 
 
+ruby-install?
+
+
+scroll natural
 
 ## old way
 ```
