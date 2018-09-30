@@ -11,6 +11,7 @@ export LANG=en_US.UTF-8
 
 # extra paths
 export PATH="$HOME/.fastlane/bin:$PATH"
+export PATH="/Users/pvinis/Library/Python/3.7/bin:$PATH"
 export PATH="$HOME/.yarn/bin:$PATH"
 export PATH="$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 export NVM_DIR="$HOME/.nvm"
@@ -124,3 +125,7 @@ DIRSTACKSIZE=5
 setopt extendedglob
 
 unsetopt nomatch
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"

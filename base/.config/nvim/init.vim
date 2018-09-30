@@ -51,11 +51,19 @@ let g:ale_linters = {
 \	'javascript': [
 \		'eslint',
 \		'flow',
-\		],
+\		'prettier',
+\	],
+\	'typescript': [
+\		'prettier',
+\	],
 \}
 let g:ale_fixers = {
 \	'javascript': [
 \		'eslint',
+\		'prettier',
+\	],
+\	'typescript': [
+\		'prettier',
 \	],
 \}
 let g:ale_fix_on_save = 1

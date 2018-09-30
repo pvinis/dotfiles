@@ -22,3 +22,6 @@
 
 [credential]
 	helper = osxkeychain
+[user]
+	name = Pavlos Vinieratos
+	email = pvinis@gmail.com

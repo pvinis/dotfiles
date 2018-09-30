@@ -1,37 +1,45 @@
 # brew
 brew "git"
-brew "thefuck"
-brew "trash"
-brew "ag"
 brew "stow"
-brew "fzf"
-brew "zsh"
-brew "yarn", args: ["without-node"]
-brew "pvinis/pvinis/colortools"
+#brew "zsh"
+brew "thefuck"
+#brew "trash"
+# brew "ag"
+#brew "fzf"
+# brew "yarn", args: ["without-node"]
+tap "pvinis/pvinis"
+brew "colortools"
 
 # cask
-cask "franz"
+#cask "franz"
+cask "rambox"
 cask "visual-studio-code"
 cask "webtorrent"
-cask "teamviewer"
+#cask "teamviewer"
 cask "save-hollywood"
-cask "postman"
-cask "react-native-debugger"
+#cask "postman"
+#cask "react-native-debugger"
 cask "the-unarchiver"
-cask "docker"
-cask "keepingyouawake"
-cask "arq"
+#cask "docker"
+#cask "keepingyouawake"
+#cask "arq"
 cask "skype"
 cask "spotify"
-cask "steam"
+#cask "steam"
 cask "vlc"
-cask "tunnelblick"
+#cask "tunnelblick"
 cask "caskroom/versions/dropbox-beta"
-cask "caskroom/versions/firefox-beta"
-cask "caskroom/versions/google-chrome-beta"
+#cask "caskroom/versions/firefox-beta"
+#cask "caskroom/versions/google-chrome-beta"
 cask "caskroom/versions/1password-beta"
 cask "caskroom/versions/airmail-beta"
-cask "caskroom/versions/iterm2-nightly"
+#cask "caskroom/versions/iterm2-nightly"
+cask vnc-viewer
+tap "homebrew/cask-fonts"
+cask font-iosevka
 
 # mas
-#mas ""
+brew "mas"
+mas "xcode", id: 497799835
+mas "paste", id: 967805235
+mas "magnet", id: 441258766
