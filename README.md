@@ -26,9 +26,40 @@ stow base macos git private
 ```
 
 
+
+	1	pwpolicy getaccountpolicies > ~/Desktop/file.plist
+	2	sudo nano ~/Desktop/file.plist
+	3	Delete the first line, which says Getting global account policies to make the file valid XML
+	4	Change the bolded part to your Regex
+policyAttributePassword matches '^$|.{4,}+'
+	5	pwpolicy  setaccountpolicies ~/Desktop/file.plist
+	6	passwd
+Presets:
+
+
+192:~ pvinis$ git clone https://github.com/pvinis/dotfiles.git .d
+Me https, gia na ginei prin to ssh.
+
+Stow, ola ok
+
+Switch to Zsh?
+Run brew bundle
+
+
+Git clone the private stuff, after naming the system?
+
+
+
+Creds
+https://pawelgrzybek.com/change-macos-user-preferences-via-command-line/
+https://github.com/mathiasbynens/dotfiles/blob/master/.macos
+
+
 setup zsh
 nvm setup
 brew bundleeeee and separate the brewfile file to work, home etc
+
+after brew bundle, do ruby-install ~/.ruby-version to install the version i need
 
 
 
