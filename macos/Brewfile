@@ -6,6 +6,9 @@ brew "thefuck"
 #brew "trash"
 # brew "ag"
 #brew "fzf" 
+# ruby 
+brew chruby
+brew ruby-install
 # brew "yarn", args: ["without-node"]
 tap "pvinis/pvinis"
 brew "colortools"
