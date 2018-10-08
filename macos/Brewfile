@@ -5,7 +5,7 @@ brew "stow"
 brew "thefuck"
 #brew "trash"
 # brew "ag"
-#brew "fzf"
+#brew "fzf" 
 # brew "yarn", args: ["without-node"]
 tap "pvinis/pvinis"
 brew "colortools"
@@ -34,9 +34,9 @@ cask "caskroom/versions/dropbox-beta"
 cask "caskroom/versions/1password-beta"
 cask "caskroom/versions/airmail-beta"
 #cask "caskroom/versions/iterm2-nightly"
-cask vnc-viewer
+cask "vnc-viewer"
 tap "homebrew/cask-fonts"
-cask font-iosevka
+cask "font-iosevka"
 
 # mas
 brew "mas"
