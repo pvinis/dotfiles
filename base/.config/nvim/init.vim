@@ -26,6 +26,9 @@ Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' } " in shougo we tru
 
 Plug 'wesQ3/vim-windowswap'
 
+Plug 'Alok/notational-fzf-vim'
+
+
 "" try
 """ Plug 'vimwiki/vimwiki'
 "Plug 'sgur/vim-editorconfig'
@@ -40,8 +43,12 @@ colorscheme base16-eighties
 
 
 " basic
-let mapleader="\<spc>"
+let mapleader="\<Space>"
 
+nmap <silent> <leader>vv :edit $MYVIMRC<CR>
+nmap <silent> <leader>vs :source $MYVIMRC<CR>
+ 
+ 
 
 
 " ale
@@ -51,11 +58,18 @@ let g:ale_linters = {
 \	'javascript': [
 \		'eslint',
 \		'flow',
-\		],
+\	],
+\	'typescript': [
+\		'tslint',
+\	],
 \}
 let g:ale_fixers = {
 \	'javascript': [
 \		'eslint',
+\		'flow',
+\	],
+\	'typescript': [
+\		'tslint',
 \	],
 \}
 let g:ale_fix_on_save = 1
@@ -99,6 +113,12 @@ let g:javascript_conceal_underscore_arrow_function = "⬢"
 
 set conceallevel=1
 
+
+" notational-fzf-vim 
+let g:nv_search_paths = ['~/Dropbox/Notes', 'README.md']
+let g:nv_preview_direction = 'up'
+let g:nv_use_short_pathnames = 1
+nnoremap <silent> <d-l> :NV<cr>
  
 " mouse
 set mouse=nicr
@@ -111,4 +131,8 @@ set autoread
 au FocusGained,BufEnter * :silent! !
 " autosave on buf switch
 au BufWinLeave * :silent! w
+
+" delete current file
+nnoremap <leader>DF :call delete(expand('%'))<CR> | bdelete!
+
 
