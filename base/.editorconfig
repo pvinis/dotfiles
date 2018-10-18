@@ -1,6 +1,16 @@
 root = true
 
+[*]
+end_of_line = lf
 insert_final_newline = true
+
+[*.{js}]
+indent_style = space
+indent_size = 2
+
+[*.{swift}]
+indent_style = tab
+indent_size = 4
 
 [devices.txt]
 indent_style = tab

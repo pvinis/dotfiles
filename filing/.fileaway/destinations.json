@@ -1,0 +1,40 @@
+{
+    "Apple Developer Program Invoice": {
+        "variables": [
+            {"name": "Date", "type": "string"}
+        ],
+        "destination": [
+            {"type": "text", "value": "bla/Receipts/"},
+            {"type": "variable", "value": "Date"},
+            {"type": "text", "value": " Apple Distribution International Apple Developer Program Invoice"}
+        ]
+    },
+    "mycujoo payslip": {
+        "variables": [
+            {"name": "YearMonth", "type": "date", "dateParams": {"hasDay": false}},
+            {"name": "d", "type": "date"}
+        ],
+        "destination": [
+            {"type": "text", "value": "mycujoo payslips/"},
+            {"type": "variable", "value": "YearMonth"},
+            {"type": "variable", "value": "d"},
+            {"type": "text", "value": "mycujoo payslip"}
+        ]
+    },
+     "test all": {
+        "variables": [
+            {"name": "AYearMonth", "type": "date", "dateParams": {"hasDay": false}},
+            {"name": "AnExplicitDate", "type": "date", "dateParams": {"hasDay": true}},
+            {"name": "AnImplicitDate", "type": "date"},
+            {"name": "AString", "type": "string"}
+        ],
+        "destination": [
+            {"type": "text", "value": "all tests/"},
+            {"type": "variable", "value": "AYearMonth"},
+            {"type": "variable", "value": "AnExplicitDate"},
+            {"type": "variable", "value": "AnImplicitDate"},
+            {"type": "variable", "value": "AString"},
+            {"type": "text", "value": "testing all"}
+        ]
+    }
+}

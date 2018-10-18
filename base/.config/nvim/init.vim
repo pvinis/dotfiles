@@ -47,8 +47,8 @@ let mapleader="\<Space>"
 
 nmap <silent> <leader>vv :edit $MYVIMRC<CR>
 nmap <silent> <leader>vs :source $MYVIMRC<CR>
- 
- 
+
+
 
 
 " ale
@@ -58,18 +58,22 @@ let g:ale_linters = {
 \	'javascript': [
 \		'eslint',
 \		'flow',
+\		'prettier',
 \	],
 \	'typescript': [
 \		'tslint',
+\		'prettier',
 \	],
 \}
 let g:ale_fixers = {
 \	'javascript': [
 \		'eslint',
 \		'flow',
+\		'prettier',
 \	],
 \	'typescript': [
 \		'tslint',
+\		'prettier',
 \	],
 \}
 let g:ale_fix_on_save = 1
@@ -114,12 +118,12 @@ let g:javascript_conceal_underscore_arrow_function = "⬢"
 set conceallevel=1
 
 
-" notational-fzf-vim 
+" notational-fzf-vim
 let g:nv_search_paths = ['~/Dropbox/Notes', 'README.md']
 let g:nv_preview_direction = 'up'
 let g:nv_use_short_pathnames = 1
 nnoremap <silent> <d-l> :NV<cr>
- 
+
 " mouse
 set mouse=nicr
 
