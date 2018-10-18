@@ -23,7 +23,8 @@ NODE_GLOBALS+=("yarn")
 
 load_nvm () {
     export NVM_DIR=~/.nvm
-    [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" # This loads nvm
+    # [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" # This loads nvm
+    [ -s "$(brew --prefix nvm)/nvm.sh" ] && . "$(brew --prefix nvm)/nvm.sh" # This loads nvm from brew
 }
 load_nvm # load this for now. there is a problem without it. when vscode strats, or if i go to a react proj and run ./node_modules/.bin/flow, it starts with /usr/bin/env node, and that doesnt load nvm
 
