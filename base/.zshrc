@@ -8,6 +8,8 @@ base16_eighties
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
+export GPG_TTY=$(tty)
+
 # extra paths
 export PATH="$HOME/.fastlane/bin:$PATH"
 export PATH="/Users/pvinis/Library/Python/3.7/bin:$PATH"

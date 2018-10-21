@@ -25,3 +25,8 @@
 [user]
 	name = Pavlos Vinieratos
 	email = pvinis@gmail.com
+	signingkey = C0605894C41ECF57
+[gpg]
+	program = gpg
+[commit]
+	gpgsign = true
