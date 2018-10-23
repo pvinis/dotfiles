@@ -11,14 +11,22 @@
     },
     "mycujoo payslip": {
         "variables": [
-            {"name": "YearMonth", "type": "date", "dateParams": {"hasDay": false}},
-            {"name": "d", "type": "date"}
+            {"name": "YearMonth", "type": "date", "dateParams": {"hasDay": false}}
         ],
         "destination": [
-            {"type": "text", "value": "mycujoo payslips/"},
+            {"type": "text", "value": "netherlands/mycujoo/payslips/"},
             {"type": "variable", "value": "YearMonth"},
-            {"type": "variable", "value": "d"},
-            {"type": "text", "value": "mycujoo payslip"}
+            {"type": "text", "value": " payslip"}
+        ]
+    },
+    "mycujoo annual statement (jaaropgaaf)": {
+        "variables": [
+            {"name": "Year", "type": "date", "dateParams": {"hasDay": false}}
+        ],
+        "destination": [
+            {"type": "text", "value": "netherlands/mycujoo/payslips/"},
+            {"type": "variable", "value": "Year"},
+            {"type": "text", "value": " annual statement (jaaropgaaf)"}
         ]
     },
      "test all": {
