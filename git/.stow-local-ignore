@@ -1,0 +1,2 @@
+# .gitignore is ignored by default.
+# this file serves as an override, by not having .gitignore in it.
