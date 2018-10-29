@@ -39,7 +39,7 @@ call plug#end()
 
 
 let base16colorspace = 256
-colorscheme base16-eighties
+colorscheme base16-tomorrow
 
 
 " basic
