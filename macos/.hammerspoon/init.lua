@@ -53,3 +53,7 @@ meetMute:setClickCallback(meetMuteClicked)
 setMeetMute(mute)
 
 hs.hotkey.bind({"cmd", "shift"}, "1", muteHangouts)
+
+
+bedtime = hs.menubar.new()
+bedtime:setIcon("./bedtime.pdf")
