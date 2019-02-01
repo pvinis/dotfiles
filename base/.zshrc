@@ -48,6 +48,8 @@ source /usr/local/share/chruby/auto.sh
 
 
 alias f='fork'
+alias at='adb shell input keyevent 82'
+alias git='hub'
 
 # completion
 autoload -U compinit
