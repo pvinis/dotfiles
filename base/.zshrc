@@ -41,6 +41,12 @@ fuck() { # lazy load fuck
     fuck "$@"
 }
 
+kport() {
+    lsof -t -i :$1 | xargs kill
+}
+
+alias krn='kport 8081'
+
 source /usr/local/share/chruby/chruby.sh
 source /usr/local/share/chruby/auto.sh
 
@@ -48,6 +54,8 @@ source /usr/local/share/chruby/auto.sh
 
 
 alias f='fork'
+alias c='code .'
+alias cl='clear'
 
 # completion
 autoload -U compinit
