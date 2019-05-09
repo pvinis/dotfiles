@@ -1,0 +1,2 @@
+*.private filter=git-crypt diff=git-crypt
+*_private filter=git-crypt diff=git-crypt
