@@ -1,3 +1,5 @@
+# New place: [pvinis/chez](https://github.com/pvinis/chez)
+
 # pavlos dotfiles
 
 ## setup a new computer
