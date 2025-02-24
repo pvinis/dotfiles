@@ -1,72 +1,11 @@
-cask "adoptopenjdk8"
-brew "coreutils"
-brew "aws-iam-authenticator"
 brew "bat"
 brew "exa"
 brew "fd"
-brew "fzf"
-brew "git"
-brew "gnupg"
-brew "hub"
-brew "imagemagick@6"
-brew "jq"
-brew "libssh2"
-brew "mas"
-brew "memcached", restart_service: true
 brew "minicom"
-brew "pinentry-mac"
-brew "pkg-config"
-brew "postgresql"
-brew "redis", restart_service: true
-brew "ripgrep"
-brew "shellcheck"
-brew "subversion"
-brew "teensy_loader_cli"
-brew "the_silver_searcher"
-brew "thefuck"
-brew "trash"
-brew "watchman"
-brew "youtube-dl"
 brew "artsy/formulas/copy_env"
-brew "artsy/formulas/hokusai"
-brew "d12frosted/emacs-plus/emacs-plus@26", link: false
-brew "mongodb/brew/mongodb-community"
-brew "mongodb/brew/mongodb-community@3.6"
-brew "osx-cross/avr/avr-gcc@8", link: true
-brew "pvinis/pvinis/colortools"
-brew "px4/px4/gcc-arm-none-eabi"
-brew "twpayne/taps/chezmoi"
-cask "1password-cli"
-cask "alfred"
 cask "background-music"
-cask "figma"
-cask "finicky"
-cask "flipper"
-cask "font-iosevka"
-cask "gimp"
-cask "graphiql"
-cask "graphql-playground"
-cask "hammerspoon"
-cask "insomnia"
 cask "itsycal"
 cask "krita"
 cask "licecap"
 cask "meetingbar"
-cask "obs"
-cask "postman"
-cask "save-hollywood"
-cask "steam"
-cask "virtualbox"
-cask "visual-studio-code"
-cask "webtorrent"
 cask "xquartz"
-mas "Airmail", id: 918858936
-mas "GarageBand", id: 682658836
-mas "Gifski", id: 1351639930
-mas "iMovie", id: 408981434
-mas "Keynote", id: 409183694
-mas "Magnet", id: 441258766
-mas "Numbers", id: 409203825
-mas "Pages", id: 409201541
-mas "Things", id: 904280696
-mas "Xcode", id: 497799835
