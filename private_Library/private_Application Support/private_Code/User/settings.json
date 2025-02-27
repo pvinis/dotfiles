@@ -236,5 +236,10 @@
     "[markdown]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
-    "workbench.activityBar.location": "top"
+    "workbench.activityBar.location": "top",
+    "redhat.telemetry.enabled": false,
+    "workbench.editorAssociations": {
+        "*.copilotmd": "vscode.markdown.preview.editor",
+        "*.svg": "default"
+    }
 }

@@ -164,7 +164,7 @@
         "editor.defaultFormatter": "yinfei.luahelper"
     },
     "[markdown]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
+        "editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
     },
     "cursor.cpp.disabledLanguages": ["plaintext", "scminput"],
     "window.commandCenter": 1,
