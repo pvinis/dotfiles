@@ -1,154 +1,154 @@
 {
-  "type" : "group",
   "actions" : [
     {
+      "key" : "t",
       "label" : "",
       "type" : "application",
-      "value" : "/Applications/iTerm.app",
-      "key" : "t"
+      "value" : "/Applications/iTerm.app"
     },
     {
-      "type" : "group",
-      "key" : "o",
       "actions" : [
         {
           "key" : "b",
+          "label" : "",
           "type" : "application",
-          "value" : "/Applications/Zen Browser.app",
-          "label" : ""
+          "value" : "/Applications/Zen Browser.app"
         },
         {
-          "type" : "application",
           "key" : "m",
-          "value" : "/Applications/Beeper.app",
-          "label" : ""
-        },
-        {
-          "value" : "/Applications/Cursor.app",
+          "label" : "",
           "type" : "application",
-          "key" : "e",
-          "label" : ""
-        }
-      ],
-      "label" : "open"
-    },
-    {
-      "actions" : [
-        {
-          "type" : "url",
-          "key" : "e",
-          "value" : "raycast://extensions/raycast/emoji-symbols/search-emoji-symbols",
-          "label" : ""
+          "value" : "/Applications/Beeper.app"
         },
         {
-          "value" : "raycast://confetti",
+          "key" : "e",
           "label" : "",
-          "type" : "url",
-          "key" : "p"
-        },
-        {
-          "value" : "raycast://extensions/raycast/system/open-camera",
-          "key" : "c",
-          "label" : "",
-          "type" : "url"
+          "type" : "application",
+          "value" : "/Applications/Cursor.app"
         }
       ],
-      "label" : "raycast",
-      "key" : "r",
+      "key" : "o",
+      "label" : "open",
       "type" : "group"
     },
     {
-      "key" : "w",
       "actions" : [
         {
-          "value" : "raycast://extensions/raycast/window-management/maximize-height",
-          "label" : "max height",
           "key" : "e",
-          "type" : "url"
+          "label" : "",
+          "type" : "url",
+          "value" : "raycast://extensions/raycast/emoji-symbols/search-emoji-symbols"
         },
         {
-          "value" : "raycast://extensions/raycast/window-management/left-half",
-          "key" : "a",
+          "key" : "p",
+          "label" : "",
           "type" : "url",
-          "label" : "left half"
+          "value" : "raycast://confetti"
         },
         {
+          "key" : "c",
+          "label" : "",
           "type" : "url",
-          "value" : "raycast://extensions/raycast/window-management/right-half",
-          "key" : "g",
-          "label" : "right half"
-        },
-        {
-          "type" : "url",
-          "value" : "raycast://extensions/raycast/window-management/next-display",
-          "key" : "q",
-          "label" : "other screen"
-        },
-        {
-          "value" : "raycast://extensions/raycast/window-management/first-third",
-          "type" : "url",
-          "label" : "left third",
-          "key" : "s"
+          "value" : "raycast://extensions/raycast/system/open-camera"
         }
       ],
-      "type" : "group",
-      "label" : "window mgmt"
+      "key" : "r",
+      "label" : "raycast",
+      "type" : "group"
     },
     {
-      "type" : "group",
-      "key" : "p",
-      "label" : "extra",
+      "actions" : [
+        {
+          "key" : "e",
+          "label" : "max height",
+          "type" : "url",
+          "value" : "raycast://extensions/raycast/window-management/maximize-height"
+        },
+        {
+          "key" : "a",
+          "label" : "left half",
+          "type" : "url",
+          "value" : "raycast://extensions/raycast/window-management/left-half"
+        },
+        {
+          "key" : "g",
+          "label" : "right half",
+          "type" : "url",
+          "value" : "raycast://extensions/raycast/window-management/right-half"
+        },
+        {
+          "key" : "q",
+          "label" : "other screen",
+          "type" : "url",
+          "value" : "raycast://extensions/raycast/window-management/next-display"
+        },
+        {
+          "key" : "s",
+          "label" : "left third",
+          "type" : "url",
+          "value" : "raycast://extensions/raycast/window-management/first-third"
+        }
+      ],
+      "key" : "w",
+      "label" : "window mgmt",
+      "type" : "group"
+    },
+    {
       "actions" : [
         {
           "key" : "n",
-          "value" : "https://meet.google.com/new",
+          "label" : "gmeet new",
           "type" : "url",
-          "label" : "gmeet new"
+          "value" : "https://meet.google.com/new"
         },
         {
+          "key" : "m",
           "label" : "gmeet landing",
           "type" : "url",
-          "value" : "https://meet.google.com/landing",
-          "key" : "m"
+          "value" : "https://meet.google.com/landing"
         },
         {
-          "type" : "command",
+          "key" : "w",
           "label" : "",
-          "value" : "shortcuts run \"led strip white light\"",
-          "key" : "w"
+          "type" : "command",
+          "value" : "shortcuts run \"led strip white light\""
         }
-      ]
+      ],
+      "key" : "p",
+      "label" : "extra",
+      "type" : "group"
     },
     {
-      "key" : "f",
       "actions" : [
         {
+          "key" : "p",
           "label" : "",
-          "value" : "/Users/pavlos/Cloud/paperwork",
           "type" : "folder",
-          "key" : "p"
+          "value" : "~/Cloud/paperwork"
         },
         {
           "key" : "a",
-          "type" : "folder",
           "label" : "",
-          "value" : "/Users/pavlos/Cloud/paperwork/atomiki"
+          "type" : "folder",
+          "value" : "~/Cloud/paperwork/atomiki"
         }
       ],
+      "key" : "f",
       "label" : "",
       "type" : "group"
     },
     {
-      "type" : "application",
       "key" : "c",
-      "value" : "/Applications/Cursor.app",
-      "label" : ""
+      "label" : "",
+      "type" : "application",
+      "value" : "/Applications/Cursor.app"
     },
     {
-      "type" : "application",
-      "value" : "/Applications/Xcode-16.2.0.app/Contents/Developer/Applications/Simulator.app",
       "key" : "i",
-      "label" : ""
+      "label" : "",
+      "type" : "application",
+      "value" : "/Applications/Xcode-16.2.0.app/Contents/Developer/Applications/Simulator.app"
     }
-  ]
+  ],
+  "type" : "group"
 }
