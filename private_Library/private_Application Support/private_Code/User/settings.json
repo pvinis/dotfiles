@@ -122,7 +122,7 @@
     },
     // "svelte.enable-ts-plugin": true,
     "vscode-neovim.neovimExecutablePaths.darwin": "/opt/homebrew/bin/nvim",
-    "workbench.iconTheme": "catppuccin-latte",
+    "workbench.iconTheme": "catppuccin-mocha",
     "workbench.preferredHighContrastColorTheme": "Abyss",
     "workbench.preferredDarkColorTheme": "Catppuccin Mocha",
     "workbench.preferredHighContrastLightColorTheme": "Base16 Light Pop",

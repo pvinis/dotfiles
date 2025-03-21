@@ -152,7 +152,7 @@
     "editor.formatOnSave": true,
     "figma.autocompleteBlocks": true,
     "esbonio.server.pythonPath": "/Users/pvinis/.local/share/mise/installs/python/3.12.2/bin/python",
-    "git.openRepositoryInParentFolders": "never",
+    "git.openRepositoryInParentFolders": "always",
     "search.exclude": {
         "**/.obsidian": true
     },
@@ -244,5 +244,9 @@
     "rust-analyzer.restartServerOnConfigChange": true,
     "rust-analyzer.checkOnSave": true,
     "workbench.colorCustomizations": {},
-    "database-client.showUser": true
+    "database-client.showUser": true,
+    "files.associations": {
+        "*.css": "tailwindcss"
+    },
+    "update.releaseTrack": "prerelease"
 }
