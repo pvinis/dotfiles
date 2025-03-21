@@ -1,11 +1,30 @@
 [init]
 	defaultBranch = main
+[include]
+	path = config_local
+
+[merge]
+	ff = false
+
+[pull]
+	ff = true
+
+[diff]
+	colorMoved = zebra
+
+[alias]
+	boc = reset HEAD~
+	pullu = pull upstream
+	pullf = !git fetch --all && git reset --hard "origin/$(git branch | grep \\* | cut -d ' ' -f2)"
+	wipsave = !git add -A && git commit -m "wip" && git push
+	wipload = !git pull && git boc && git push -f
+
+[credential]
+	helper = osxkeychain
 [user]
 	name = Pavlos Vinieratos
 	email = pvinis@gmail.com
 	signingkey = 723C26A1A52F8E10
-[alias]
-	boc = reset HEAD~
 [core]
 	pager = diff-so-fancy | less --tabs=4 -RF
 	attributesfile = /Users/pavlos/.gitattributes
@@ -30,3 +49,5 @@
 	gpgsign = true
 [tag]
 	gpgSign = true
+[diff "nodiff"]
+	command = true
