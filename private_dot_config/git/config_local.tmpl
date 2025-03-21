@@ -1,0 +1,7 @@
+[user]
+	signingkey = {{ if eq .chezmoi.hostname "cyan" -}}
+			1522B68A5295FC56
+		{{- else if eq .chezmoi.hostname "royal-purple" -}}
+			88A40EF278C8020D
+		{{- end }}
+

@@ -2,6 +2,7 @@
 babashka = "1"
 bun = "1"
 deno = "2"
+java = "zulu-17"
 lua = "5"
 node = "23"
 npm = "11"

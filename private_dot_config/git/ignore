@@ -1,0 +1,19 @@
+# macOS
+.DS_Store
+
+# node
+**/node_modules/*
+
+## xcode User settings
+**/xcuserdata/*
+
+## app packaging
+**/*.ipa
+**/*.dSYM.zip
+**/*.dSYM
+
+# fastlane
+**/fastlane/report.xml
+
+# but keep these (useful for keeping empty folders)
+!.gitkeep

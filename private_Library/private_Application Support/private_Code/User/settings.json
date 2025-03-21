@@ -122,7 +122,7 @@
     },
     // "svelte.enable-ts-plugin": true,
     "vscode-neovim.neovimExecutablePaths.darwin": "/opt/homebrew/bin/nvim",
-    "workbench.iconTheme": "catppuccin-mocha",
+    "workbench.iconTheme": "catppuccin-latte",
     "workbench.preferredHighContrastColorTheme": "Abyss",
     "workbench.preferredDarkColorTheme": "Catppuccin Mocha",
     "workbench.preferredHighContrastLightColorTheme": "Base16 Light Pop",
@@ -238,6 +238,9 @@
     },
     "workbench.activityBar.location": "top",
     "redhat.telemetry.enabled": false,
+    "rust-analyzer.check.command": "clippy",
+    "rust-analyzer.restartServerOnConfigChange": true,
+    "rust-analyzer.checkOnSave": true,
     "workbench.editorAssociations": {
         "*.copilotmd": "vscode.markdown.preview.editor",
         "*.svg": "default"

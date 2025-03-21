@@ -1,0 +1,3 @@
+#!/bin/sh
+cd /Users/pvinis/.local/share/firenvim
+exec '/usr/local/Cellar/neovim/0.4.2/bin/nvim' --headless -c 'call firenvim#run()'

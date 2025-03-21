@@ -1,0 +1,162 @@
+# zinit init
+source "$HOME/.zshrc_zinitcheck"    # check if zinit exists, otherwise download it
+source "$HOME/.zinit/bin/zinit.zsh" # load zinit
+autoload -Uz _zinit
+(( ${+_comps} )) && _comps[zinit]=_zinit
+
+# Load a few important annexes, without Turbo
+# (this is currently required for annexes)
+zinit light-mode for \
+    zinit-zsh/z-a-patch-dl \
+    zinit-zsh/z-a-as-monitor \
+    zinit-zsh/z-a-bin-gem-node
+# zinit init done
+
+
+zinit load willghatch/zsh-saneopt # some sane options
+
+# zinit ice silent wait:1 atload:_zsh_autosuggest_start
+# zinit load zsh-users/zsh-autosuggestions
+
+# zinit ice blockf
+# zinit load zsh-users/zsh-completions
+
+autoload bashcompinit
+bashcompinit
+
+zinit snippet OMZ::plugins/asdf/asdf.plugin.zsh
+
+zinit snippet OMZ::plugins/colored-man-pages/colored-man-pages.plugin.zsh
+
+zinit snippet OMZ::plugins/mosh/mosh.plugin.zsh
+
+zinit load zsh-users/zsh-history-substring-search
+bindkey '^[[A' history-substring-search-up   # up arrow
+bindkey '^[[B' history-substring-search-down # down arrow
+
+
+[ -s "$HOME/.zshrc_private" ] && source $HOME/.zshrc_private
+[ -s "$HOME/.zshrc_local" ] && source $HOME/.zshrc_local
+
+BASE16_SHELL=$HOME/.config/base16-shell
+[ -n "$PS1" ] && [ -s $BASE16_SHELL/profile_helper.sh ] && eval "$($BASE16_SHELL/profile_helper.sh)"
+base16_eighties
+
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+
+export BROWSER=firefox
+
+export GPG_TTY=$(tty)
+
+# extra paths
+export PATH="$HOME/.fastlane/bin:$PATH"
+export PATH="$HOME/.yarn/bin:$PATH"
+export PATH="$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+
+
+export ANDROID_HOME="$HOME/Library/Android/sdk"
+
+
+# other
+fuck() { # lazy load fuck
+    unset -f fuck
+    eval $(thefuck --alias)
+    fuck "$@"
+}
+
+kport() {
+    lsof -t -i :$1 | xargs kill
+}
+
+srt() {
+	~/Source/pvinis/p0lco-shortener/node_modules/.bin/netlify-shortener "$1" "$2"
+}
+
+alias krn='kport 8081'
+
+alias rmf='rm -rf'
+
+alias fixmonitorshit='displayplacer "id:A0E7CA20-2BD5-5E54-3CAC-9FB8238C6731 res:1440x2560 hz:60 color_depth:8 scaling:off origin:(0,0) degree:90" "id:5EB29A81-68C7-A5BD-87DD-7ED2AA7DAD80 res:1440x900 color_depth:4 scaling:on origin:(1440,1772) degree:0" "id:888A2502-306B-FEE9-3AAA-5DBE91CED531 res:1440x2560 hz:59 color_depth:8 scaling:off origin:(-1440,0) degree:90"'
+alias che='chezmoi'
+alias chepull='che update --apply=false'
+
+upgradeall() {
+	brew update
+	brew upgrade
+	brew cask upgrade
+}
+
+cleanupall() {
+	brew cleanup
+	yarn cache clean
+	rm -rf ~/Library/Developer/Xcode/DerivedData
+	rm -rf ~/Library/Developer/CoreSimulator/Caches
+	rm -rf ~/.gradle/caches
+}
+
+# aliases
+alias f='fork'
+alias c='code . || code-insiders .'
+alias cl='clear'
+alias at='adb shell input keyevent 82'
+alias git='hub'
+alias oplogin='eval $(op signin my)'
+alias zupd='zinit self-update'
+
+# completion
+if type brew &>/dev/null; then
+  FPATH=$(brew --prefix)/share/zsh/site-functions:$FPATH
+fi
+
+autoload -Uz compinit
+compinit
+
+# no args: open .
+# with args: open `args`
+o() {
+	if [[ $# -gt 0 ]]; then
+		open "$@"
+	else
+		open .
+	fi
+}
+
+
+# modify the prompt to contain git branch name if applicable
+git_prompt_info() {
+  current_branch=$(git current-branch 2> /dev/null)
+  if [[ -n $current_branch ]]; then
+    echo " %{$fg_bold[green]%}$current_branch%{$reset_color%}"
+  fi
+}
+
+# Allow exported PS1 variable to override default prompt.
+if ! env | grep -q '^PS1='; then
+  PS1='${SSH_CONNECTION+"%{$fg_bold[green]%}%n@%m:"}%{$fg_bold[blue]%}%c%{$reset_color%}$(git_prompt_info) %# '
+fi
+PROMPT='%B%F{%(?.green.red)}┌──[%(?.. %?) %b%F{white}%~
+%B%F└──>%b%f '
+
+# makes color constants available
+autoload -U colors
+colors
+# enable colored output from ls
+export CLICOLOR=1
+
+# history
+setopt hist_ignore_all_dups inc_append_history
+HISTFILE=~/.zhistory
+HISTSIZE=4096
+SAVEHIST=4096
+
+bindkey -v
+setopt extendedglob
+
+unsetopt nomatch
+
+export EDITOR=code
+
+autoload -U edit-command-line
+zle -N edit-command-line
+bindkey '^x^x' edit-command-line

@@ -203,5 +203,46 @@
     "RadonIDE.panelLocation": "tab",
     "vscode-postgres.prettyPrintJSONfields": true,
     "vscode-postgres.defaultDatabase": "postgres",
-    "vscode-postgres.defaultConnection": "local db"
+    "vscode-postgres.defaultConnection": "local db",
+    "makefile.configureOnOpen": true,
+    "database-client.autoSync": true,
+    "dbcode.connections": [
+        {
+            "connectionId": "ROGKimIy6An3bw9xwtE2M",
+            "name": "prod-RO",
+            "driver": "postgres",
+            "color": "#F00019",
+            "connectionType": "host",
+            "host": "mobile-api-postgres-cluster-do-user-12694742-0.c.db.ondigitalocean.com",
+            "port": 25060,
+            "ssl": false,
+            "username": "pavlos_readonly",
+            "password": "",
+            "savePassword": "secretStorage",
+            "database": "mobile-api-db",
+            "connectionTimeout": 30
+        },
+        {
+            "connectionId": "sIPRzGGhOSOCatD-8tC5Y",
+            "name": "local",
+            "driver": "postgres",
+            "color": "#3B8EA2",
+            "connectionType": "host",
+            "host": "localhost",
+            "port": 5432,
+            "ssl": false,
+            "username": "postgres",
+            "password": "",
+            "savePassword": "secretStorage",
+            "database": "postgres",
+            "connectionTimeout": 30
+        }
+    ],
+    "dbcode.history.enabled": true,
+    "postman.settings.dotenv-detection-notification-visibility": false,
+    "rust-analyzer.check.command": "clippy",
+    "rust-analyzer.restartServerOnConfigChange": true,
+    "rust-analyzer.checkOnSave": true,
+    "workbench.colorCustomizations": {},
+    "database-client.showUser": true
 }

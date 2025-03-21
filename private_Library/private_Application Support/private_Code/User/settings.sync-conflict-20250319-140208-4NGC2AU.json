@@ -1,0 +1,125 @@
+{
+	"editor.fontLigatures": true,
+	"editor.fontSize": 16,
+	"editor.lineNumbers": "off",
+	"editor.renderIndentGuides": false,
+	"files.insertFinalNewline": true,
+	"files.associations": {
+		"Fastfile": "ruby",
+		"Gemfile": "ruby",
+		"Pluginfile": "ruby",
+		".solidarity": "json5",
+	},
+	"eslint.enable": true,
+	"eslint.packageManager": "yarn",
+	"eslint.validate": [
+		"javascript",
+		"javascriptreact",
+		"typescript",
+		"typescriptreact",
+		"markdown",
+		"markdownreact",
+	],
+	"editor.detectIndentation": true,
+	"editor.minimap.enabled": true,
+	"editor.minimap.renderCharacters": false,
+	"editor.fontFamily": "Iosevka, jetbrains mono, SF Mono, Menlo, Monaco, 'Courier New', monospace",
+	"npm.enableScriptExplorer": true,
+	"workbench.activityBar.visible": true,
+	"workbench.sideBar.location": "right",
+	"prettifySymbolsMode.substitutions": [
+		{
+			"language": [
+				"typescript",
+				{
+					"pattern": "**/*.ts[x]"
+				}
+			],
+			"revealOn": "selection",
+			"substitutions": [
+				{
+					"ugly": ";",
+					"post": "$",
+					"pretty": " "
+				}
+			]
+		}
+	],
+	"workbench.startupEditor": "newUntitledFile",
+	"explorer.confirmDragAndDrop": false,
+	"javascript.updateImportsOnFileMove.enabled": "always",
+	"typescript.updateImportsOnFileMove.enabled": "always",
+	"editor.suggestSelection": "first",
+	"window.zoomLevel": 0,
+	"editor.insertSpaces": false,
+	"prettier.bracketSpacing": false,
+	"workbench.colorCustomizations": {},
+	"peacock.favoriteColors": [
+		{
+			"name": "Angular Red",
+			"value": "#b52e31"
+		},
+		{
+			"name": "Auth0 Orange",
+			"value": "#eb5424"
+		},
+		{
+			"name": "Azure Blue",
+			"value": "#007fff"
+		},
+		{
+			"name": "C# Purple",
+			"value": "#68217A"
+		},
+		{
+			"name": "Gatsby Purple",
+			"value": "#639"
+		},
+		{
+			"name": "Go Cyan",
+			"value": "#5dc9e2"
+		},
+		{
+			"name": "Java Blue-Gray",
+			"value": "#557c9b"
+		},
+		{
+			"name": "JavaScript Yellow",
+			"value": "#f9e64f"
+		},
+		{
+			"name": "Mandalorian Blue",
+			"value": "#1857a4"
+		},
+		{
+			"name": "Node Green",
+			"value": "#215732"
+		},
+		{
+			"name": "React Blue",
+			"value": "#00b3e6"
+		},
+		{
+			"name": "Something Different",
+			"value": "#832561"
+		},
+		{
+			"name": "Vue Green",
+			"value": "#42b883"
+		}
+	],
+	"emmet.showExpandedAbbreviation": "never",
+	"editor.codeActionsOnSave": {
+		"source.fixAll.eslint": true
+	},
+	"explorer.confirmDelete": false,
+	"workbench.preferredDarkColorTheme": "Base16 Dark Eighties",
+	"workbench.preferredLightColorTheme": "Base16 Light Tomorrow",
+	"workbench.colorTheme": "Base16 Light Tomorrow",
+	"terminal.external.osxExec": "iTerm.app",
+	"terminal.integrated.fontSize": 14,
+	"window.autoDetectColorScheme": true,
+    "[c]": {
+        "editor.defaultFormatter": "xaver.clang-format"
+    },
+}

@@ -1,0 +1,48 @@
+{
+    "Apple Developer Program Invoice": {
+        "variables": [
+            {"name": "Date", "type": "string"}
+        ],
+        "destination": [
+            {"type": "text", "value": "bla/Receipts/"},
+            {"type": "variable", "value": "Date"},
+            {"type": "text", "value": " Apple Distribution International Apple Developer Program Invoice"}
+        ]
+    },
+    "mycujoo payslip": {
+        "variables": [
+            {"name": "YearMonth", "type": "date", "dateParams": {"hasDay": false}}
+        ],
+        "destination": [
+            {"type": "text", "value": "netherlands/mycujoo/payslips/"},
+            {"type": "variable", "value": "YearMonth"},
+            {"type": "text", "value": " payslip"}
+        ]
+    },
+    "mycujoo annual statement (jaaropgaaf)": {
+        "variables": [
+            {"name": "Year", "type": "date", "dateParams": {"hasDay": false}}
+        ],
+        "destination": [
+            {"type": "text", "value": "netherlands/mycujoo/payslips/"},
+            {"type": "variable", "value": "Year"},
+            {"type": "text", "value": " annual statement (jaaropgaaf)"}
+        ]
+    },
+     "test all": {
+        "variables": [
+            {"name": "AYearMonth", "type": "date", "dateParams": {"hasDay": false}},
+            {"name": "AnExplicitDate", "type": "date", "dateParams": {"hasDay": true}},
+            {"name": "AnImplicitDate", "type": "date"},
+            {"name": "AString", "type": "string"}
+        ],
+        "destination": [
+            {"type": "text", "value": "all tests/"},
+            {"type": "variable", "value": "AYearMonth"},
+            {"type": "variable", "value": "AnExplicitDate"},
+            {"type": "variable", "value": "AnImplicitDate"},
+            {"type": "variable", "value": "AString"},
+            {"type": "text", "value": "testing all"}
+        ]
+    }
+}

@@ -8,6 +8,9 @@ fish_add_path $HOME/.bin
 fish_add_path /opt/homebrew/sbin
 fish_add_path $HOME/.bun/bin
 fish_add_path /opt/whalebrew/bin
+set -x ANDROID_HOME $HOME/Library/Android/sdk
+fish_add_path $ANDROID_HOME/emulator $ANDROID_HOME/platform-tools
+
 
 
 alias b bun
@@ -28,6 +31,7 @@ alias oplogin='eval $(op signin --account my)'
 
 set fish_greeting
 fish_vi_key_bindings
+set fish_cursor_insert block
 
 
 function c
@@ -52,6 +56,20 @@ function check_repo_reminder --on-variable PWD
         osascript -e 'display notification "⚠️🎥 time to stream your work!! 🎥⚠️" with title "purge work" sound name "Funk"'
     end
 end
+
+
+function pearadd
+	pear known | jq '.[] | "\(.username) - \(.name) - \(.email)"' | fzf | awk '{ print substr($1, 2) }' | xargs pear current:add
+end
+
+function pearcur
+	pear current | jq '.[] | "\(.username) - \(.name) - \(.email)"'
+end
+
+alias peardel "pear current:clear"
+alias peargit "pear amend"
+alias pearcopy "pear current:trailer | pbcopy"
+
 
 function upall
     brew bundle

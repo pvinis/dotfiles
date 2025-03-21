@@ -1,5 +1,13 @@
 {
-  "auths": {},
-  "credsStore": "osxkeychain",
-  "currentContext": "orbstack"
+	"auths": {},
+	"credsStore": "osxkeychain",
+	"currentContext": "orbstack",
+	"plugins": {
+		"-x-cli-hints": {
+			"enabled": "true"
+		}
+	},
+	"features": {
+		"hooks": "true"
+	}
 }
