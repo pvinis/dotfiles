@@ -24,7 +24,7 @@
 [user]
 	name = Pavlos Vinieratos
 	email = pvinis@gmail.com
-	signingkey = 723C26A1A52F8E10
+	signingkey = 99F0108549760C69
 [core]
 	pager = diff-so-fancy | less --tabs=4 -RF
 	attributesfile = /Users/pavlos/.gitattributes
@@ -51,3 +51,5 @@
 	gpgSign = true
 [diff "nodiff"]
 	command = true
+[gpg]
+	program = /opt/homebrew/bin/gpg
