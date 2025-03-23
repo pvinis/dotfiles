@@ -43,8 +43,6 @@
 [credential "https://gist.github.com"]
 	helper =
 	helper = !/opt/homebrew/bin/gh auth git-credential
-[includeIf "hasconfig:remote.*.url:https://github.com/Squads-Protocol/*"]
-	path = ~/.config/git/config-sqds
 [commit]
 	gpgsign = true
 [tag]
@@ -53,3 +51,6 @@
 	command = true
 [gpg]
 	program = /opt/homebrew/bin/gpg
+
+[includeIf "hasconfig:remote.*.url:https://github.com/Squads-Protocol/*"]
+	path = ~/.config/git/config-sqds
