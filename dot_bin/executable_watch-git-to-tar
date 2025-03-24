@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+set -euxo pipefail
+
+
+# Watch ~/Source for changes and git tarballs to sync with syncthing more easily
+
+
+watchman -j < ~/.bin/watchman-tar-gits-config.json

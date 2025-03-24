@@ -1,0 +1,15 @@
+[
+    "trigger",
+    "/Users/pavlos/Source",
+    {
+        "name": "tar-gits",
+        "expression": [
+            "anyof",
+            ["match", "**/.git/HEAD", "wholename"],
+            ["match", "**/.git/refs/**", "wholename"],
+            ["match", "**/.git/index", "wholename"]
+        ],
+        "append_files": true,
+        "command": ["/Users/pavlos/.bin/tar-git"]
+    }
+]

@@ -1,0 +1,27 @@
+#!/usr/bin/env deno run --allow-run
+
+// makes a tarball of the git repo
+
+import { exec } from "https://deno.land/x/exec/mod.ts";
+import _ from "npm:lodash@4.17.21";
+
+const BASE_DIR = "/Users/pavlos/Source";
+
+if (Deno.args.length === 0) {
+  console.log("no args");
+  Deno.exit(0);
+}
+
+const files = Deno.args;
+const includesGit = files.filter((file) => file.includes(".git"));
+const clampAtGit = includesGit.map((file) => file.split(".git")[0] + ".git");
+const gitDirs = _.uniq(clampAtGit);
+const fullPaths = gitDirs.map((dir) => `${BASE_DIR}/${dir}`);
+
+// console.log(fullPaths);
+
+for (const path of fullPaths) {
+  const pathWithoutGit = path.replace("/.git", "");
+  // console.log(`tar -cf ${pathWithoutGit}/git-archive.tar ${path}`);
+  await exec(`tar -cf ${pathWithoutGit}/git-archive.tar ${path}`);
+}
