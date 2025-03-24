@@ -17,9 +17,11 @@
     "editor.gotoLocation.multipleTypeDefinitions": "goto",
     "editor.gotoLocation.multipleDefinitions": "goto",
     "githubPullRequests.pullBranch": "never",
+    "workbench.preferredLightColorTheme": "Catppuccin Latte",
     "editor.fontLigatures": true,
     "editor.minimap.showSlider": "always",
     "editor.minimap.renderCharacters": false,
+    "workbench.colorTheme": "Ayu Light",
     "explorer.fileNesting.enabled": true,
     "explorer.fileNesting.patterns": {
         "*.ts": "${capture}.test.ts",
@@ -37,6 +39,12 @@
             "backgroundColor": "rgba(0,0,0,.2)"
         }
     ],
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": "explicit"
+    },
+    "notebook.codeActionsOnSave": {
+        "source.fixAll": true
+    },
     "magit.forge-enabled": true,
     "vscode-neovim.highlightGroups.highlights": {
         "IncSearch": {
@@ -58,9 +66,14 @@
         "editor.defaultFormatter": "svelte.svelte-vscode"
     },
     "vscode-neovim.neovimExecutablePaths.darwin": "/opt/homebrew/bin/nvim",
+    "workbench.iconTheme": "catppuccin-latte",
     "workbench.preferredHighContrastColorTheme": "Abyss",
+    "workbench.preferredDarkColorTheme": "Catppuccin Mocha",
     "workbench.preferredHighContrastLightColorTheme": "Base16 Light Pop",
-    "base16.generator.activatedThemes": ["base16-default-dark", "sss"],
+    "base16.generator.activatedThemes": [
+        "base16-default-dark",
+        "sss"
+    ],
     "[python]": {
         "editor.defaultFormatter": "charliermarsh.ruff"
     },
@@ -108,11 +121,23 @@
     "tailwind-fold.showTailwindImage": false,
     "tailwind-fold.foldLengthThreshold": 5,
     "tailwindCSS.experimental.classRegex": [
-        ["clsx\\(([^)]*)\\)", "(?:'|\"|`)([^']*)(?:'|\"|`)"],
+        [
+            "clsx\\(([^)]*)\\)",
+            "(?:'|\"|`)([^']*)(?:'|\"|`)"
+        ],
         "tw`([^`]*)",
-        ["tw.style\\(([^)]*)\\)", "'([^']*)'"],
-        ["cva\\(([^)]*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]"],
-        ["cx\\(([^)]*)\\)", "(?:'|\"|`)([^']*)(?:'|\"|`)"]
+        [
+            "tw.style\\(([^)]*)\\)",
+            "'([^']*)'"
+        ],
+        [
+            "cva\\(([^)]*)\\)",
+            "[\"'`]([^\"'`]*).*?[\"'`]"
+        ],
+        [
+            "cx\\(([^)]*)\\)",
+            "(?:'|\"|`)([^']*)(?:'|\"|`)"
+        ]
     ],
     "tailwindCSS.classAttributes": [
         "class",
@@ -136,8 +161,11 @@
         "astro"
     ],
     "github.copilot.editor.enableAutoCompletions": true,
+    "ReactNativeIDE.panelLocation": "tab",
     "eslint.useFlatConfig": true,
+    "editor.accessibilitySupport": "off",
     "todomd.defaultFile": "/Users/pvinis/Source/freelance/signatures/TODO.md",
+    "window.autoDetectColorScheme": true,
     "catppuccin.accentColor": "lavender",
     "catppuccin.italicComments": false,
     "enableTelemetry": true,
@@ -152,7 +180,7 @@
     "editor.formatOnSave": true,
     "figma.autocompleteBlocks": true,
     "esbonio.server.pythonPath": "/Users/pvinis/.local/share/mise/installs/python/3.12.2/bin/python",
-    "git.openRepositoryInParentFolders": "always",
+    "git.openRepositoryInParentFolders": "never",
     "search.exclude": {
         "**/.obsidian": true
     },
@@ -164,89 +192,27 @@
         "editor.defaultFormatter": "yinfei.luahelper"
     },
     "[markdown]": {
-        "editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
-    },
-    "cursor.cpp.disabledLanguages": ["plaintext", "scminput"],
-    "window.commandCenter": 1,
-    "workbench.colorTheme": "Catppuccin Latte",
-    "workbench.iconTheme": "catppuccin-latte",
-    "window.autoDetectColorScheme": true,
-    "workbench.preferredLightColorTheme": "Catppuccin Latte",
-    "workbench.preferredDarkColorTheme": "Catppuccin Mocha",
-    "tailwind-fold.unfoldedTextOpacity": 0.6,
-    "tailwind-fold.autoFold": false,
-    "[html]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
-    "editor.codeActionsOnSave": {
-        "source.fixAll.biome": "explicit",
-        "source.fixAll.eslint": "explicit"
-    },
-    "editor.accessibilitySupport": "off",
-    "[rust]": {
-        "editor.defaultFormatter": "rust-lang.rust-analyzer",
-        "editor.formatOnSave": true
-    },
-    "rust-analyzer.inlayHints.parameterHints.enable": false,
-    "rust-analyzer.inlayHints.renderColons": false,
-    "rust-analyzer.inlayHints.typeHints.enable": false,
-    "rust-analyzer.inlayHints.genericParameterHints.const.enable": false,
-    "rust-analyzer.inlayHints.chainingHints.enable": false,
-    "rust-analyzer.inlayHints.closingBraceHints.enable": false,
-    "[dockercompose]": {
-        "editor.defaultFormatter": "ms-azuretools.vscode-docker"
-    },
-    "rust-analyzer.diagnostics.experimental.enable": true,
-    "[shellscript]": {
-        "editor.defaultFormatter": "mkhl.shfmt"
-    },
-    "RadonIDE.panelLocation": "tab",
-    "vscode-postgres.prettyPrintJSONfields": true,
-    "vscode-postgres.defaultDatabase": "postgres",
-    "vscode-postgres.defaultConnection": "local db",
-    "makefile.configureOnOpen": true,
-    "database-client.autoSync": true,
-    "dbcode.connections": [
-        {
-            "connectionId": "ROGKimIy6An3bw9xwtE2M",
-            "name": "prod-RO",
-            "driver": "postgres",
-            "color": "#F00019",
-            "connectionType": "host",
-            "host": "mobile-api-postgres-cluster-do-user-12694742-0.c.db.ondigitalocean.com",
-            "port": 25060,
-            "ssl": false,
-            "username": "pavlos_readonly",
-            "password": "",
-            "savePassword": "secretStorage",
-            "database": "mobile-api-db",
-            "connectionTimeout": 30
-        },
-        {
-            "connectionId": "sIPRzGGhOSOCatD-8tC5Y",
-            "name": "local",
-            "driver": "postgres",
-            "color": "#3B8EA2",
-            "connectionType": "host",
-            "host": "localhost",
-            "port": 5432,
-            "ssl": false,
-            "username": "postgres",
-            "password": "",
-            "savePassword": "secretStorage",
-            "database": "postgres",
-            "connectionTimeout": 30
-        }
-    ],
-    "dbcode.history.enabled": true,
-    "postman.settings.dotenv-detection-notification-visibility": false,
+    "redhat.telemetry.enabled": false,
     "rust-analyzer.check.command": "clippy",
     "rust-analyzer.restartServerOnConfigChange": true,
     "rust-analyzer.checkOnSave": true,
-    "workbench.colorCustomizations": {},
-    "database-client.showUser": true,
-    "files.associations": {
-        "*.css": "tailwindcss"
+    "workbench.editorAssociations": {
+        "*.copilotmd": "vscode.markdown.preview.editor",
+        "*.svg": "default"
     },
-    "update.releaseTrack": "prerelease"
+    "explorer.confirmDelete": false,
+    "roo-cline.allowedCommands": [
+        "npm test",
+        "npm install",
+        "tsc",
+        "git log",
+        "git diff",
+        "git show"
+    ],
+    "cursor.cpp.disabledLanguages": [
+        "plaintext",
+        "scminput"
+    ]
 }

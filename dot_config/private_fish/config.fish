@@ -26,8 +26,13 @@ alias chu "chezmoi git pull -- --autostash --rebase && chezmoi diff"
 alias chU "chezmoi update"
 alias chr "chezmoi re-add"
 
-alias oplogin='eval $(op signin --account my)'
+alias watchmanlogs "watchman get-log | jq -r '.log' | xargs tail -f"
 
+alias gha "gh auth switch"
+
+function oplogin
+    eval $(op signin --account my)
+end
 
 set fish_greeting
 fish_vi_key_bindings
